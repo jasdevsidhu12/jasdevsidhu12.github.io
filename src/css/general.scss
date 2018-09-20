@@ -1,0 +1,89 @@
+$borderProps: solid black 1px;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gainsboro;
+  color: green;
+  .portfolio-header {
+    background-color: #8bc34a;
+    color: white;
+    font-size: 15pt;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    img {
+      margin: 5px;
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+    }
+    span {
+      // background-color: #4caf50;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-left: 20px;
+    }
+    padding-left: 50%;
+  }
+  .portfolio-picture-panel {
+    // border: $borderProps;
+    position: fixed;
+    padding-left: 49%;
+  }
+  .portfolio-flex-main-panel {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    .portfolio-main-panel-child {
+      margin: 5px;
+      .header {
+        background-color: whitesmoke;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 15pt;
+        // text-align: center;
+      }
+      .body {
+        color: black;
+        padding: 10px;
+        background-color: white;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+    }
+    .summary {
+      max-width: 800px;
+    }
+    .work-exp {
+      .body {
+        max-width: 1553px;
+      }
+    }
+    .education {
+      .ed-body {
+        display: table;
+        border-collapse: separate;
+        border-spacing: 15px;
+        .ed-body-row {
+          display: table-row;
+        }
+        .ed-body-cell {
+          display: table-cell;
+          vertical-align: top;
+        }
+        .ed-content-text {
+          padding-top: 5px;
+        }
+        img {
+          width: 300px;
+          height: 100px;
+        }
+        .itcarlow {
+          width: 300px;
+          height: 150px;
+        }
+      }
+    }
+  }
+}
