@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 import { Table, TableBody, TableRow, TableCell, Typography, Paper } from '@material-ui/core';
 
 
@@ -9,7 +10,7 @@ class EducationItem extends Component {
   }
   render() {
     return (
-    <div className='portfolio-main-panel-child education'>
+    <div className={classnames('portfolio-main-panel-child', this.props.class)}>
       <div className="header">
         Education
       </div>

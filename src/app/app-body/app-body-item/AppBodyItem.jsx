@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import { Paper, Typography } from '@material-ui/core';
+import classnames from 'classnames';
 
 
 class AppBodyItem extends Component {
@@ -10,7 +10,7 @@ class AppBodyItem extends Component {
   }
   render() {
     return (
-      <div className={'portfolio-main-panel-child ' + this.props.class}>
+      <div className={classnames('portfolio-main-panel-child', this.props.class)}>
         <div className="header">
           Summary
         </div>

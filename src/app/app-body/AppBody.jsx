@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import AppBodyItem from './app-body-item/AppBodyItem';
-import EducationItem from './app-body-item/EducationItem';
+import { AppBodyItem, EducationItem, WorkExp } from './app-body-item';
+//  import EducationItem from './app-body-item/EducationItem';
 // import WorkExperienceItem from './app-body-item/WorkExperienceItem';
 
 class AppBody extends Component { 
@@ -16,9 +15,8 @@ class AppBody extends Component {
     return (
     <div className="portfolio-flex-main-panel">
       <AppBodyItem class="summary" text={this.summaryText}/>
-      <EducationItem class="education" />
-      {/* <WorkExperienceItem class="work-exp" /> */}
-      {/* <AppBodyItem class="" text={this.summaryText}/> */}
+      <EducationItem class="summary" />
+      <WorkExp class="summary"/>
     </div>
   );
   }
