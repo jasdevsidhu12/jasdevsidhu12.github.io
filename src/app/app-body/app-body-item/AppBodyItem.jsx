@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
+import { Paper, Typography } from '@material-ui/core';
 
 
 class AppBodyItem extends Component {
@@ -13,9 +14,11 @@ class AppBodyItem extends Component {
         <div className="header">
           Summary
         </div>
-        <div className="body">
-        {this.props.text}
-        </div>
+        <Paper className={'paper-padd'} elevation={1}>
+          <Typography component="p">
+            { this.props.text }
+          </Typography>
+        </Paper>
       </div>
   );
   }

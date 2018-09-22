@@ -2,7 +2,19 @@ $borderProps: solid black 1px;
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: gainsboro;
+  // background-image: url("../img/avatar.jpeg");
   color: green;
+  .navBarJSX {
+    max-width: 200px;
+    // height: 100%;
+    margin-top: 80px;
+  }
+  .navJSX {
+    padding-left: 40px;
+  }
+  .paper-padd {
+    padding: 10px;
+  }
   .portfolio-header {
     background-color: #8bc34a;
     color: white;
@@ -31,10 +43,6 @@ body {
   }
   .portfolio-flex-main-panel {
     margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
     .portfolio-main-panel-child {
       margin: 5px;
       .header {
@@ -61,28 +69,10 @@ body {
       }
     }
     .education {
-      .ed-body {
-        display: table;
-        border-collapse: separate;
-        border-spacing: 15px;
-        .ed-body-row {
-          display: table-row;
-        }
-        .ed-body-cell {
-          display: table-cell;
-          vertical-align: top;
-        }
-        .ed-content-text {
-          padding-top: 5px;
-        }
-        img {
-          width: 300px;
-          height: 100px;
-        }
-        .itcarlow {
-          width: 300px;
-          height: 150px;
-        }
+      max-width: 800px;
+      img {
+        width: 300px;
+        height: 100px;
       }
     }
   }
