@@ -8,9 +8,12 @@ body {
     max-width: 200px;
     // height: 100%;
     margin-top: 80px;
+    position: sticky;
+    top: 0;
   }
   .navJSX {
     padding-left: 40px;
+    position: -webkit-sticky; /* Safari */
   }
   .paper-padd {
     padding: 10px;
