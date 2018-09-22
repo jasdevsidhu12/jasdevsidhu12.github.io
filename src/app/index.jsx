@@ -1,8 +1,10 @@
 import React from 'react';
+import { BrowserRouter, Route} from 'react-router-dom';
 import ReactDOM from 'react-dom';
-import { NavBar } from './nav-bar';
+import ProjectBody from './project-body/ProjectBody';
 import AppBody from './app-body/AppBody';
-import { Grid, Paper } from '@material-ui/core';
+import { NavBar } from './nav-bar';
+import { Grid } from '@material-ui/core';
 
 import '../css/general.scss';
 
@@ -10,12 +12,17 @@ const App = () => {
 	return (
 		<Grid container>
 			<Grid item sm={3}>
-				{/* <Paper>Nav</Paper> */}
 				<NavBar />
 			</Grid>
 			<Grid item sm={9}>
-				{/* <Paper>Main</Paper> */}
-				<AppBody />
+				<BrowserRouter>
+					<div>
+					<Route path="/" exact component={AppBody} />
+					<Route path="/background" exact component={AppBody} />
+					<Route path="/project" exact component={ProjectBody} />
+					</div>
+				</BrowserRouter>
+				{/* <ProjectBody /> */}
 			</Grid>
 		</Grid>
 	);

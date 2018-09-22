@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { AppBodyItem, EducationItem, WorkExp } from './app-body-item';
-//  import EducationItem from './app-body-item/EducationItem';
-// import WorkExperienceItem from './app-body-item/WorkExperienceItem';
 
 class AppBody extends Component { 
   constructor() {

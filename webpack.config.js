@@ -5,7 +5,7 @@ module.exports = {
     entry: path.resolve('src/app/index.jsx'),
     output: {
         path: path.resolve(__dirname, 'dist'),
-        publicPath: 'src',
+        publicPath: 'dist',
         filename: 'bundle.min.js'
     },
     plugins: [new webpack.HotModuleReplacementPlugin()],
@@ -19,7 +19,8 @@ module.exports = {
         port: 8080,
         hot: true,
         inline: true,
-        stats: 'minimal'
+        stats: 'minimal',
+        historyApiFallback: true
     },
     module: {
         rules: [{
