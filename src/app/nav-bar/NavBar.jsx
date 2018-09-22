@@ -20,14 +20,14 @@ class NavBar extends Component {
           </ListItem>
           <ListItem classes={{ root: 'navJSX'}}>
             <Typography color="inherit">
-              <a href="/background">
+              <a href="/#/background">
                 My Background
               </a>
             </Typography>
           </ListItem>
           <ListItem classes={{ root: 'navJSX'}}>
             <Typography color="inherit">
-              <a href="project">
+              <a href="/#/project">
                 My Projects
               </a>
             </Typography>
