@@ -17,6 +17,17 @@ body {
       color: green;
       text-decoration-line: none;
     }
+    &:hover {
+      background-color: silver;
+      cursor: pointer;
+    }
+  }
+  .current-link {
+    background-color: gainsboro;
+    font-weight: bold;
+    &:hover {
+      background-color: gainsboro;
+    }
   }
   .paper-padd {
     padding: 10px;

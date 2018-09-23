@@ -4,7 +4,7 @@ import { Typography } from '@material-ui/core';
 
 const FEPro3 = () => {
   return (
-    <Typography>
+    <Typography component="div">
       <b>Front-End, “BIMRooms” noticeboard prototype for IBMers <a href="https://github.com/jasdevsidhu12/BIMRooms" target="_blank">(github.com/jasdevsidhu12/BIMRooms)</a></b>
       <ul>
         <li>A prototype ‘noticeboard’ UI potentially replace to traditional old notice board at IBM offices.</li>

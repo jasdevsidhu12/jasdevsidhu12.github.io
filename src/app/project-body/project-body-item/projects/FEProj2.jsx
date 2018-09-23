@@ -4,7 +4,7 @@ import { Typography } from '@material-ui/core';
 
 const FEPro2 = () => {
   return (
-    <Typography>
+    <Typography component="div">
       <b>Front-End, SuperLiga League Table Standings UI <a href="https://github.com/jasdevsidhu12/LTTable" target="_blank">(github.com/jasdevsidhu12/LTTable)</a></b>
       <ul>
         <li>Technologies used are ReactJS (Redux, Router, Enzyme), Webpack, Karma, Protractor, RxJS, Babel, Jasmine JS, ES6, PhantomJS, Express(NodeJS), SASS (CSS, CSS3).</li>
