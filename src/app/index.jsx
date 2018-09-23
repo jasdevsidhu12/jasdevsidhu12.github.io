@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, HashRouter} from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import ProjectBody from './project-body/ProjectBody';
 import AppBody from './app-body/AppBody';

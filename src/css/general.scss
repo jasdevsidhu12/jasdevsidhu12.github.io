@@ -13,7 +13,10 @@ body {
   }
   .navJSX {
     padding-left: 40px;
-    position: -webkit-sticky; /* Safari */
+    a {
+      color: green;
+      text-decoration-line: none;
+    }
   }
   .paper-padd {
     padding: 10px;
