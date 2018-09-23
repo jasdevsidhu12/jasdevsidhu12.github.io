@@ -7,20 +7,18 @@ class NavBar extends Component {
   style;
   constructor() {
     super();
-    console.log(window.location.hash);
+    const hash = window.location.hash;
     this.getClassNames = this.getClassNames.bind(this);
     this.style = {width: 100,
       height: 100,
       borderRadius: '100px'};
       this.state = {
-        background: window.location.hash === '#/background' ? true : false,
-        project: window.location.hash === '#/project' ? true : false
+        background: hash === '#/background' || hash === '' || hash === '#/'  ? true : false,
+        project: hash === '#/project' ? true : false
       };
   }
 
   handleListItemClick(event, link) {
-    // event.target.className.replace('current-link', '');
-    console.log(event.target.className);
     if (link === 'background') {
       this.setState({background: true, project: false});
       window.location.href = "/#/background";
