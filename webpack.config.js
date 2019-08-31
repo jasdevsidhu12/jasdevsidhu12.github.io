@@ -1,8 +1,10 @@
 const webpack = require('webpack');
 const path = require('path');
+require("babel-core/register");
+require("babel-polyfill");
 
 module.exports = {
-    entry: path.resolve('src/app/index.jsx'),
+    entry: ['babel-polyfill', path.resolve('src/app/index.jsx')],
     output: {
         path: path.resolve(__dirname, 'dist'),
         publicPath: 'dist',
@@ -28,7 +30,7 @@ module.exports = {
             use: {
                 loader: 'babel-loader',
                 options: {
-                    presets: ['es2015', 'react', 'stage-2']
+                    presets: ['es2015', 'react', 'stage-0']
                 },
             },
             exclude: [/node_modules/]
