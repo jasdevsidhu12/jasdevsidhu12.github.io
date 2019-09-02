@@ -7,9 +7,8 @@ class IISUser extends Component {
     super(props);
     this.state = { loading: true, htmlData: [] };
     window.addEventListener('message',function(event) {
-      console.log('received response:  ',event.data);
       if (event.data.hasOwnProperty('key')) {
-        this.document.getElementById(event.data.key).height = `${event.data.height + 100}px`
+        this.document.getElementById(event.data.key).height = `${event.data.height + 30}px`
       }
     },false);
   }

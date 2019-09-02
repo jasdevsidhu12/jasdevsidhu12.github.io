@@ -14,17 +14,21 @@ class NavBar extends Component {
       borderRadius: '100px'};
       this.state = {
         background: hash === '#/background' || hash === '' || hash === '#/'  ? true : false,
-        project: hash === '#/project' ? true : false
+        project: hash === '#/project' ? true : false,
+        blog: hash === '#/blog' ? true : false
       };
   }
 
   handleListItemClick(event, link) {
     if (link === 'background') {
-      this.setState({background: true, project: false});
+      this.setState({background: true, blog: false, project: false});
       window.location.href = "/#/background";
     } else if (link === 'project') {
-      this.setState({background: false, project: true});
+      this.setState({background: false, blog: false, project: true});
       window.location.href = "/#/project";
+    } else if (link === 'blog') {
+      this.setState({background: false, blog: true, project: false});
+      window.location.href = "/#/blog";
     }
   }
 
@@ -53,9 +57,18 @@ class NavBar extends Component {
               </a>
             </Typography>
           </ListItem>
+          <ListItem classes={{ root: this.getClassNames('blog') }} onClick={event => this.handleListItemClick(event, 'blog')}>
+            <Typography color="inherit">
+              <a>
+                <b>Blog</b>
+              </a>
+            </Typography>
+          </ListItem>
           <ListItem classes={{ root: 'navJSX'}}>
             <Typography color="inherit">
-              <b>Download CV</b>
+              <a target="_blank" href="https://docs.google.com/document/d/1mv3GqHpXKdnUq76vnXHV_lDXKG4vGlzUsK2RHmZyA5Y/edit?usp=sharing">
+                <b>Link to CV</b>
+              </a>
             </Typography>
           </ListItem>
         </List>

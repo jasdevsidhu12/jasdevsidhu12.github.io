@@ -44,6 +44,13 @@ module.exports = {
                 loader: "sass-loader" // compiles Sass to CSS
             }],
             exclude: [/node_modules/]
+        }, {
+            test: /\.(jpe?g|png|gif|svg)$/i,
+            loader: "file-loader?name=/public/icons/[name].[ext]",
+            options: {
+                outputPath: 'images',
+              },
+            exclude: [/node_modules/]
         }]
     }
 };

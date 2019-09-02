@@ -21,7 +21,7 @@ const App = () => {
 					<Route path="/" exact component={AppBody} />
 					<Route path="/background" exact component={AppBody} />
 					<Route path="/project" exact component={ProjectBody} />
-					<Route path="/learn" exact component={LearnBody} />
+					<Route path="/blog" exact component={LearnBody} />
 					</div>
 				</HashRouter>
 				{/* <ProjectBody /> */}
